@@ -1,0 +1,121 @@
+ _            _             _   
+| |_ __ _ ___| | _____ __ _| |_ 
+| __/ _` / __| |/ / __/ _` | __|
+| || (_| \__ \   < (_| (_| | |_ 
+ \__\__,_|___/_|\_\___\__,_|\__|
+                                
+
+
+version 0.9.20
+[0;30;47m[INFO   ][0m : Linting passed for file: /Users/arnab/PersonalProjects/quickstart-amazon-eks/templates/amazon-eks-grafana.template.yaml
+[0;30;47m[INFO   ][0m : Linting passed for file: /Users/arnab/PersonalProjects/quickstart-amazon-eks/templates/amazon-eks-windows-support-workload.template.yaml
+[0;30;47m[INFO   ][0m : Linting passed for file: /Users/arnab/PersonalProjects/quickstart-amazon-eks/templates/amazon-eks-test.template.yaml
+[0;30;47m[INFO   ][0m : Linting passed for file: /Users/arnab/PersonalProjects/quickstart-amazon-eks/templates/amazon-eks-fargate-profile.template.yaml
+[0;30;47m[INFO   ][0m : Linting passed for file: /Users/arnab/PersonalProjects/quickstart-amazon-eks/templates/amazon-eks-per-region-resources.template.yaml
+[0;30;47m[INFO   ][0m : Linting passed for file: /Users/arnab/PersonalProjects/quickstart-amazon-eks/templates/amazon-eks-metrics-server.template.yaml
+[0;30;47m[INFO   ][0m : Linting passed for file: /Users/arnab/PersonalProjects/quickstart-amazon-eks/templates/amazon-eks-efs.template.yaml
+[0;30;47m[INFO   ][0m : Linting passed for file: /Users/arnab/PersonalProjects/quickstart-amazon-eks/templates/amazon-eks-load-balancer-controller.template.yaml
+[0;30;47m[INFO   ][0m : Linting passed for file: /Users/arnab/PersonalProjects/quickstart-amazon-eks/templates/amazon-eks-cluster-autoscaler.template.yaml
+[0;30;47m[INFO   ][0m : Linting passed for file: /Users/arnab/PersonalProjects/quickstart-amazon-eks/templates/amazon-eks-functions.template.yaml
+[0;30;47m[INFO   ][0m : Linting passed for file: /Users/arnab/PersonalProjects/quickstart-amazon-eks/templates/amazon-eks-controlplane.template.yaml
+[0;30;47m[INFO   ][0m : Linting passed for file: /Users/arnab/PersonalProjects/quickstart-amazon-eks/templates/amazon-eks.template.yaml
+[0;30;47m[INFO   ][0m : Linting passed for file: /Users/arnab/PersonalProjects/quickstart-amazon-eks/templates/amazon-eks-entrypoint-new-vpc.template.yaml
+[0;30;47m[INFO   ][0m : Linting passed for file: /Users/arnab/PersonalProjects/quickstart-amazon-eks/templates/amazon-eks-prometheus.template.yaml
+[0;30;47m[INFO   ][0m : Linting passed for file: /Users/arnab/PersonalProjects/quickstart-amazon-eks/templates/amazon-eks-advanced-configuration.template.yaml
+[0;30;47m[INFO   ][0m : Linting passed for file: /Users/arnab/PersonalProjects/quickstart-amazon-eks/templates/amazon-eks-iam.template.yaml
+[0;30;47m[INFO   ][0m : Linting passed for file: /Users/arnab/PersonalProjects/quickstart-amazon-eks/templates/amazon-eks-per-account-resources.template.yaml
+[0;30;41m[ERROR  ][0m : ---
+[0;30;41m[ERROR  ][0m : Linting detected issues in: /Users/arnab/PersonalProjects/quickstart-amazon-eks/templates/amazon-eks-advanced-configuration.template.yaml
+[0;30;41m[ERROR  ][0m :     line 413 [3001] [Basic CloudFormation Resource Check] Invalid or unsupported Type AWS::SSM::Parameter for resource
+                                                            EKSPrivateAccessEndpointParameter in me-south-1
+[0;30;41m[ERROR  ][0m :     line 419 [3001] [Basic CloudFormation Resource Check] Invalid or unsupported Type AWS::SSM::Parameter for resource
+                                                            EKSClusterLoggingTypesParameter in me-south-1
+[0;30;41m[ERROR  ][0m :     line 427 [3001] [Basic CloudFormation Resource Check] Invalid or unsupported Type AWS::SSM::Parameter for resource
+                                                            EKSEncryptSecretsParameter in me-south-1
+[0;30;41m[ERROR  ][0m :     line 433 [3001] [Basic CloudFormation Resource Check] Invalid or unsupported Type AWS::SSM::Parameter for resource
+                                                            EKSEncryptSecretsKmsKeyArnParameter in me-south-1
+[0;30;41m[ERROR  ][0m :     line 439 [3001] [Basic CloudFormation Resource Check] Invalid or unsupported Type AWS::SSM::Parameter for resource
+                                                            EKSPublicAccessCIDRsParameter in me-south-1
+[0;30;41m[ERROR  ][0m :     line 447 [3001] [Basic CloudFormation Resource Check] Invalid or unsupported Type AWS::SSM::Parameter for resource
+                                                            NodeGroupNameParameter in me-south-1
+[0;30;41m[ERROR  ][0m :     line 453 [3001] [Basic CloudFormation Resource Check] Invalid or unsupported Type AWS::SSM::Parameter for resource
+                                                            NodeVolumeSizeParameter in me-south-1
+[0;30;41m[ERROR  ][0m :     line 459 [3001] [Basic CloudFormation Resource Check] Invalid or unsupported Type AWS::SSM::Parameter for resource
+                                                            CustomAmiIdParameter in me-south-1
+[0;30;41m[ERROR  ][0m :     line 465 [3001] [Basic CloudFormation Resource Check] Invalid or unsupported Type AWS::SSM::Parameter for resource
+                                                            NodeSecurityGroupIdParameter in me-south-1
+[0;30;41m[ERROR  ][0m :     line 471 [3001] [Basic CloudFormation Resource Check] Invalid or unsupported Type AWS::SSM::Parameter for resource
+                                                            TaintsParameter in me-south-1
+[0;30;41m[ERROR  ][0m :     line 477 [3001] [Basic CloudFormation Resource Check] Invalid or unsupported Type AWS::SSM::Parameter for resource
+                                                            LabelsParameter in me-south-1
+[0;30;41m[ERROR  ][0m :     line 483 [3001] [Basic CloudFormation Resource Check] Invalid or unsupported Type AWS::SSM::Parameter for resource
+                                                            LaunchTemplateVersionParameter in me-south-1
+[0;30;41m[ERROR  ][0m :     line 489 [3001] [Basic CloudFormation Resource Check] Invalid or unsupported Type AWS::SSM::Parameter for resource
+                                                            LaunchTemplateIdParameter in me-south-1
+[0;30;41m[ERROR  ][0m :     line 495 [3001] [Basic CloudFormation Resource Check] Invalid or unsupported Type AWS::SSM::Parameter for resource
+                                                            NodeInstanceType2Parameter in me-south-1
+[0;30;41m[ERROR  ][0m :     line 501 [3001] [Basic CloudFormation Resource Check] Invalid or unsupported Type AWS::SSM::Parameter for resource
+                                                            NodeInstanceType3Parameter in me-south-1
+[0;30;41m[ERROR  ][0m :     line 507 [3001] [Basic CloudFormation Resource Check] Invalid or unsupported Type AWS::SSM::Parameter for resource
+                                                            NodeInstanceType4Parameter in me-south-1
+[0;30;41m[ERROR  ][0m :     line 513 [3001] [Basic CloudFormation Resource Check] Invalid or unsupported Type AWS::SSM::Parameter for resource
+                                                            OnDemandPercentageParameter in me-south-1
+[0;30;41m[ERROR  ][0m :     line 519 [3001] [Basic CloudFormation Resource Check] Invalid or unsupported Type AWS::SSM::Parameter for resource
+                                                            KubernetesVersionParameter in me-south-1
+[0;30;41m[ERROR  ][0m :     line 525 [3001] [Basic CloudFormation Resource Check] Invalid or unsupported Type AWS::SSM::Parameter for resource
+                                                            IamOidcProviderParameter in me-south-1
+[0;30;41m[ERROR  ][0m :     line 531 [3001] [Basic CloudFormation Resource Check] Invalid or unsupported Type AWS::SSM::Parameter for resource
+                                                            BastionOSParameter in me-south-1
+[0;30;41m[ERROR  ][0m :     line 537 [3001] [Basic CloudFormation Resource Check] Invalid or unsupported Type AWS::SSM::Parameter for resource
+                                                            BastionBootstrapScriptParameter in me-south-1
+[0;30;41m[ERROR  ][0m :     line 543 [3001] [Basic CloudFormation Resource Check] Invalid or unsupported Type AWS::SSM::Parameter for resource
+                                                            BastionInstanceTypeParameter in me-south-1
+[0;30;41m[ERROR  ][0m :     line 549 [3001] [Basic CloudFormation Resource Check] Invalid or unsupported Type AWS::SSM::Parameter for resource
+                                                            BastionRootVolumeSizeParameter in me-south-1
+[0;30;41m[ERROR  ][0m :     line 555 [3001] [Basic CloudFormation Resource Check] Invalid or unsupported Type AWS::SSM::Parameter for resource
+                                                            BastionIAMRoleNameParameter in me-south-1
+[0;30;41m[ERROR  ][0m :     line 561 [3001] [Basic CloudFormation Resource Check] Invalid or unsupported Type AWS::SSM::Parameter for resource
+                                                            BastionEnableX11ForwardingParameter in me-south-1
+[0;30;41m[ERROR  ][0m :     line 567 [3001] [Basic CloudFormation Resource Check] Invalid or unsupported Type AWS::SSM::Parameter for resource
+                                                            BastionEnableTCPForwardingParameter in me-south-1
+[0;30;41m[ERROR  ][0m :     line 573 [3001] [Basic CloudFormation Resource Check] Invalid or unsupported Type AWS::SSM::Parameter for resource
+                                                            BastionVariablesParameter in me-south-1
+[0;30;41m[ERROR  ][0m :     line 579 [3001] [Basic CloudFormation Resource Check] Invalid or unsupported Type AWS::SSM::Parameter for resource
+                                                            EfsPerformanceModeParameter in me-south-1
+[0;30;41m[ERROR  ][0m :     line 585 [3001] [Basic CloudFormation Resource Check] Invalid or unsupported Type AWS::SSM::Parameter for resource
+                                                            EfsThroughputModeParameter in me-south-1
+[0;30;41m[ERROR  ][0m :     line 591 [3001] [Basic CloudFormation Resource Check] Invalid or unsupported Type AWS::SSM::Parameter for resource
+                                                            EfsProvisionedThroughputInMibpsParameter in me-south-1
+[0;30;41m[ERROR  ][0m :     line 597 [3001] [Basic CloudFormation Resource Check] Invalid or unsupported Type AWS::SSM::Parameter for resource
+                                                            VaultKubernetesNameSpaceParameter in me-south-1
+[0;30;41m[ERROR  ][0m :     line 603 [3001] [Basic CloudFormation Resource Check] Invalid or unsupported Type AWS::SSM::Parameter for resource
+                                                            VaultUILoadBalancerTypeParameter in me-south-1
+[0;30;41m[ERROR  ][0m :     line 609 [3001] [Basic CloudFormation Resource Check] Invalid or unsupported Type AWS::SSM::Parameter for resource
+                                                            VaultUIAccessCIDRParameter in me-south-1
+[0;30;41m[ERROR  ][0m :     line 615 [3001] [Basic CloudFormation Resource Check] Invalid or unsupported Type AWS::SSM::Parameter for resource
+                                                            VaultVersionParameter in me-south-1
+[0;30;41m[ERROR  ][0m :     line 621 [3001] [Basic CloudFormation Resource Check] Invalid or unsupported Type AWS::SSM::Parameter for resource
+                                                            VaultDeploymentSizeParameter in me-south-1
+[0;30;41m[ERROR  ][0m :     line 627 [3001] [Basic CloudFormation Resource Check] Invalid or unsupported Type AWS::SSM::Parameter for resource
+                                                            VaultNodesParameter in me-south-1
+[0;30;41m[ERROR  ][0m :     line 633 [3001] [Basic CloudFormation Resource Check] Invalid or unsupported Type AWS::SSM::Parameter for resource
+                                                            ConsulKubernetesNameSpaceParameter in me-south-1
+[0;30;41m[ERROR  ][0m :     line 639 [3001] [Basic CloudFormation Resource Check] Invalid or unsupported Type AWS::SSM::Parameter for resource
+                                                            ConsulUILoadBalancerTypeParameter in me-south-1
+[0;30;41m[ERROR  ][0m :     line 645 [3001] [Basic CloudFormation Resource Check] Invalid or unsupported Type AWS::SSM::Parameter for resource
+                                                            ConsulUIAccessCIDRParameter in me-south-1
+[0;30;41m[ERROR  ][0m :     line 651 [3001] [Basic CloudFormation Resource Check] Invalid or unsupported Type AWS::SSM::Parameter for resource
+                                                            ConsulVersionParameter in me-south-1
+[0;30;41m[ERROR  ][0m :     line 657 [3001] [Basic CloudFormation Resource Check] Invalid or unsupported Type AWS::SSM::Parameter for resource
+                                                            ConsulDeploymentSizeParameter in me-south-1
+[0;30;41m[ERROR  ][0m :     line 663 [3001] [Basic CloudFormation Resource Check] Invalid or unsupported Type AWS::SSM::Parameter for resource
+                                                            ConsulNodesParameter in me-south-1
+[0;30;41m[ERROR  ][0m : ---
+[0;30;41m[ERROR  ][0m : Linting detected issues in: /Users/arnab/PersonalProjects/quickstart-amazon-eks/templates/amazon-eks-per-region-resources.template.yaml
+[0;30;41m[ERROR  ][0m :     line 169 [3001] [Basic CloudFormation Resource Check] Invalid or unsupported Type AWS::Lambda::LayerVersion for resource
+                                                            KubectlLayer in me-south-1
+[0;30;41m[ERROR  ][0m :     line 177 [3001] [Basic CloudFormation Resource Check] Invalid or unsupported Type AWS::Lambda::LayerVersion for resource
+                                                            AwsCliLayer in me-south-1
+[0;30;41m[ERROR  ][0m :     line 185 [3001] [Basic CloudFormation Resource Check] Invalid or unsupported Type AWS::Lambda::LayerVersion for resource
+                                                            CrhelperLayer in me-south-1
+[0;30;41m[ERROR  ][0m : Lint failed with errors

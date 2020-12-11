@@ -2,6 +2,13 @@ project:
   name: qs-eks
   regions:
   - us-west-1
+ template: ./templates/amazon-eks-entrypoint-new-vpc.template.yaml
+  parameters:
+    RemoteAccessCIDR: 10.0.0.0/16
+    QSS3BucketName: $[taskcat_autobucket]
+    QSS3BucketRegion: $[taskcat_current_region]
+  lambda_source_path: functions/source
+  lambda_zip_path: functions/packages
 tests:
   default:
     template: ./templates/amazon-eks-entrypoint-new-vpc.template.yaml
@@ -13,5 +20,3 @@ tests:
       RemoteAccessCIDR: "0.0.0.0/0"
       WebserverCIDR: "0.0.0.0/0"
       QSS3KeyPrefix: "qs-eks/"
-      QSS3BucketName: "$[taskcat_autobucket]"
-      QSS3BucketRegion: "$[taskcat_current_region]"
