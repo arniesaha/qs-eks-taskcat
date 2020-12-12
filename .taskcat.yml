@@ -9,6 +9,7 @@ project:
     AvailabilityZones: $[taskcat_genaz_3]
     KeyPairName: qs-eks
     QSS3KeyPrefix: "qs-eks/"
+    NodeInstanceType: t3.micro
   lambda_source_path: functions/source
   lambda_zip_path: functions/packages
 tests:
