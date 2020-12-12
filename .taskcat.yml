@@ -1,17 +1,16 @@
 project:
   name: qs-eks
   regions:
-  - us-west-1
+  - us-east-1
+  parameters:
+    RemoteAccessCIDR: 0.0.0.0/0
+    QSS3BucketName: $[taskcat_autobucket]
+    QSS3BucketRegion: $[taskcat_current_region]
+    AvailabilityZones: $[taskcat_genaz_3]
+    KeyPairName: qs-eks
+    QSS3KeyPrefix: "qs-eks/"
+  lambda_source_path: functions/source
+  lambda_zip_path: functions/packages
 tests:
   default:
     template: ./templates/amazon-eks-entrypoint-new-vpc.template.yaml
-    regions:
-    - us-east-1
-    parameters:
-      AvailabilityZones: $[taskcat_genaz_3]
-      KeyPairName: nv-bastion
-      RemoteAccessCIDR: "0.0.0.0/0"
-      WebserverCIDR: "0.0.0.0/0"
-      QSS3KeyPrefix: "qs-eks/"
-      QSS3BucketName: "$[taskcat_autobucket]"
-      QSS3BucketRegion: "$[taskcat_current_region]"
